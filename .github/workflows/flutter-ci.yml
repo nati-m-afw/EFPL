@@ -15,7 +15,7 @@ on:
       - "flutter-user-client/"
 
 jobs:
-  test=runner:
+  test-runner:
     runs-on: ubuntu-latest
 
     steps:
