@@ -51,6 +51,8 @@ jobs:
       - name: Install dependencies 
         run: cd server && npm ci --prefer-offline --no-audit
 
+      - run: mongo
+
       - name: Run linter 👀
         run: cd server && npm run lint
 
