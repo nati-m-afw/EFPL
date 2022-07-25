@@ -14,9 +14,6 @@ class AppWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-<<<<<<< HEAD
-    return const Text("ddi");
-=======
     final AppRouter _appRouter = AppRouter();
 
     final AuthBloc _authBloc = getIt<AuthBloc>()
@@ -66,6 +63,5 @@ class AppWidget extends StatelessWidget {
         },
       ),
     );
->>>>>>> f5685f1187f8988d46374ecb995cbd496f2877a2
   }
 }
