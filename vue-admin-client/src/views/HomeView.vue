@@ -1,18 +1,26 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+  <DashboardComponent />
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
+// Components
+// import SpinnerComponent from "@/components/SpinnerComponent.vue";
+import DashboardComponent from "@/components/DashboardComponent.vue";
 export default {
   name: "HomeView",
+  data() {
+    return {
+      showConfirmModal: true,
+    };
+  },
   components: {
-    HelloWorld,
+    // SpinnerComponent,
+    DashboardComponent,
+  },
+  methods: {
+    saveAction() {
+      console.log("Saving");
+    },
   },
 };
 </script>
